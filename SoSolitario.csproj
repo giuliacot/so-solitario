@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D866572D-3F49-486B-9CD8-EAB9AD58DB3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoSolitario</RootNamespace>
+    <AssemblyName>SoSolitario</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\InizioPartitaController.cs" />
+    <Compile Include="Control\TavoloController.cs" />
+    <Compile Include="Model\Carta.cs" />
+    <Compile Include="Model\Mazzo.cs" />
+    <Compile Include="Model\MazzoNormale.cs" />
+    <Compile Include="Model\MazzoPiacentine.cs" />
+    <Compile Include="Model\PartitaSolitario.cs" />
+    <Compile Include="View\CartaTavolo.cs" />
+    <Compile Include="View\IniziaPartita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\IniziaPartita.Designer.cs">
+      <DependentUpon>IniziaPartita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Regole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Regole.Designer.cs">
+      <DependentUpon>Regole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Tavolo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Tavolo.Designer.cs">
+      <DependentUpon>Tavolo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="View\IniziaPartita.resx">
+      <DependentUpon>IniziaPartita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Regole.resx">
+      <DependentUpon>Regole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Tavolo.resx">
+      <DependentUpon>Tavolo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\b2fv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\c10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\cj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\ck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\cq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\d10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\dj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\dk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\dq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\h10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\hj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\hk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\hq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\jb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\jr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\s10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\sj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\sk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Normal\sq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\1886.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\1B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\1C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\1D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\1S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\2B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\2C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\2D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\2S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\3B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\3C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\3D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\3S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\4B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\4C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\4D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\4S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\5B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\5C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\5D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\5S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\6B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\6C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\6D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\6S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\7B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\7C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\7D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\7S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\8B..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\8C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\8D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\8S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\9B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\9C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\9D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\9S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\10B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\10C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\10D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\10S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Piacentine\dietroPiacentine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sfondo12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\inizioNormali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\inizioPiacentine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Istruzioni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\bin\Release\SoSolitario.exe
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\bin\Release\SoSolitario.pdb
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.View.IniziaPartita.resources
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.View.Regole.resources
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.Tavolo.resources
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.Properties.Resources.resources
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.csproj.GenerateResource.Cache
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.exe
+C:\Users\utente\Desktop\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.pdb
+C:\Users\utente\Documents\UniUrbino\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.exe
+C:\Users\utente\Documents\UniUrbino\ProgettoIngegneria\SoSolitario\SoSolitario\obj\x86\Release\SoSolitario.pdb
