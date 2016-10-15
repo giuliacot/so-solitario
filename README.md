@@ -7,7 +7,7 @@ Your first step in this game is to choose your favourite deck:
 1. the poker deck 
 2. the italian deck
 
-Pay attention, the second deck has less cards than the first one, that means that if you're going to play with the second, the game will be easier. :relieved:
+Pay attention, the second deck has less cards than the first one, so if you're going to play with the second, the game will be easier. :relieved:
 
 To start and play the only thing that you have to do, it's clicking on the deck in the top-right as you can see on the below image:
 
